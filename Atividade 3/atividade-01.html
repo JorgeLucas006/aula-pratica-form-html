@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>atividade 3</title>
+  <style>
+    fieldset {
+      width: 50%;
+    }
+
+    table {
+      border: 2px solid #ddd;
+      margin-left: 4rem;
+    }
+
+    th,
+    td {
+      padding: 4px;
+    }
+
+    th {
+      background-color: aquamarine;
+      text-align: left;
+    }
+
+    input{
+      margin-bottom: 5px;
+    }
+
+    label textarea {
+      vertical-align: middle;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+    .buttons input{
+      padding: 0.5rem 1rem;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container div label {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Manuntenção do Órgão Colegiado</h3>
+
+  <table>
+    <tr>
+      <th>Unidade</th>
+      <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+    </tr>
+    <tr>
+      <th>Tipo Colegiado</th>
+      <td>CONGREGAÇÃO</td>
+    </tr>
+  </table>
+
+  <fieldset>
+    <h3>Órgão Colegiado</h3>
+    <form action="">
+      <label  for="">Nome</label>
+      <input style="width: 485px;" type="text" name="" id=""> <br>
+
+      <div class="container">
+        <div>
+          <label  for="sigla">Sigla</label>
+          <input style="width: 80px;" type="text" name="sigla" id="sigla">
+        </div>
+
+        <div>
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="ativado">ATIVADO</option>
+            <option value="desativado">DESATIVADO</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <label for="data-ativacao">Data de Ativação</label>
+          <input type="date" name="data" id="data">
+        </div>
+
+        <div>
+          <label for="data-desativacao">Data de desativação</label>
+          <input type="date" name="data-desativacao" id="data-desativacao">
+        </div>
+      </div>
+      <label for="orgao-origem">Órgão de origem</label>
+      <input style="width: 420px;" type="text" name="orgao-origem" id="orgao-origem"> <br>
+
+      <label for="orgao-superior">Órgão superior</label>
+      <input style="width: 420px; margin-left: 12px;" type="text" name="orgao-superior" id="orgao-superior"><br>
+
+      <label for="documentacao">Documentação: <textarea name="documentacao" id="documentacao" cols="20" rows="5"></textarea></label> <br><br>
+
+      <div class="buttons">
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Excluir">
+      </div>
+    </form>
+  </fieldset>
+</body>
+
+</html>

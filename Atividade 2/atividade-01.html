@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+    form {
+      width: 50%;
+    }
+
+    input {
+      margin-bottom: 5px;
+    }
+
+    legend {
+      padding: 0 10px;
+    }
+
+    textarea {
+      margin-top: 1rem;
+    }
+
+    fieldset {
+      border: 1px groove #ddd;
+      padding: 1rem 2rem;
+    }
+
+    .buttons {
+      margin: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Formulário</h1>
+  <form action="">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome"> <br>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" id="endereco"> <br>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" name="cidade" id="cidade"> <br>
+
+      <label for="estado">Estado:</label>
+      <select id="estado">
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="pe">Pernambuco</option>
+        <option value="ba">Bahia</option>
+        <option value="am">Amazonas</option>
+        <option value="ac">Acre</option>
+      </select> <br>
+    </fieldset>
+    <fieldset>
+      <legend>Dados profissionais</legend>
+      <label for="cargo">Natureza do Cargo</label> <br>
+
+      <input type="radio" id="radio1" name="cargo" value="gerencia">
+      <label for="radio1">Gerência</label>
+
+      <input type="radio" id="radio2" name="cargo" value="financeiro">
+      <label for="radio2">Financeiro</label>
+
+      <input type="radio" id="radio3" name="cargo" value="recepcao">
+      <label for="radio3">Recepção</label> 
+
+      <input type="radio" id="radio4" name="cargo" value="administrativo">
+      <label for="radio4">Administrativo</label> 
+
+      <input type="radio" id="radio5" name="cargo" value="juridico">
+      <label for="radio5">Jurídico</label> <br><br>
+
+      <label for="area">Área de interesse</label> <br>
+
+      <input type="checkbox" id="checkbox1" name="area" value="gerencia">
+      <label for="checkbox1">Computação</label>
+
+      <input type="checkbox" id="checkbox2" name="area" value="financeiro">
+      <label for="checkbox2">Biologia</label>
+
+      <input type="checkbox" id="checkbox3" name="area" value="recepcao">
+      <label for="checkbox3">Meio Ambiente</label> 
+
+      <input type="checkbox" id="checkbox4" name="area" value="administrativo">
+      <label for="checkbox4">Engenharia</label> 
+
+      <input type="checkbox" id="checkbox5" name="area" value="juridico">
+      <label for="checkbox5">História</label> <br>
+
+      
+      <label for="curriculo">Mini-curriculo:</label>
+      <textarea id="curriculo" name="curriculo" rows="5" cols="33"></textarea>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dados pessoais</title>
+</head>
+<body>
+  <form action="">
+    <h2>Dados pessoais</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">  <br><br>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade">
+    <h2>Dados profissionais</h2>
+    <label for="escolaridade">Escolaridade:</label>
+    <select name="escolaridade" id="escolaridade">
+      <option value="em">Ensino médio</option>
+      <option value="gr">Graduação</option>
+      <option value="pg">Pós-graduação</option>
+      <option value="ot">Outros</option>
+    </select> <br><br>
+    <label for="title">Área de atuação</label>
+
+    <input type="radio" id="gerencia" name="area" value="gerencia">
+    <label for="gerencia">Gerência</label>
+
+    <input type="radio" id="financeiro" name="area" value="financeiro"> 
+    <label for="financeiro">Financeiro</label> 
+  
+    <input type="radio" id="recepcao" name="area" value="recepcao">
+    <label for="recepcao">Recepção</label> <br>
+    <br>
+    <input type="submit" value="Salvar">
+  </form>
+</body>
+</html>
